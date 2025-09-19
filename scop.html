@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MOPH VAPT Services Scope Table</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            margin: 20px;
+            font-size: 11pt;
+            color: #333;
+        }
+        
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            page-break-inside: avoid;
+        }
+        
+        th {
+            background-color: #4472C4;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            font-size: 12pt;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+            line-height: 1.4;
+        }
+        
+        .stage-header {
+            background-color: #D9E1F2;
+            font-weight: bold;
+            font-size: 12pt;
+            color: #2F5496;
+        }
+        
+        .activity {
+            font-weight: bold;
+            color: #333;
+            width: 35%;
+        }
+        
+        .methodology {
+            width: 65%;
+        }
+        
+        /* Word compatibility styles */
+        @page {
+            margin: 1cm;
+        }
+        
+        @media print {
+            table {
+                page-break-inside: auto;
+            }
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Assessment Stage</th>
+                    <th>Activity</th>
+                    <th>Scope and Methodology</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- STAGE 1 -->
+                <tr>
+                    <td rowspan="3" class="stage-header">STAGE 1 (ONSITE)</td>
+                    <td class="activity">External Penetration Testing (Black Box) - 700 Public IPs</td>
+                    <td class="methodology">
+                        Cytomate's external vulnerability assessment and penetration testing methodology evaluates MOPH's security posture leveraging PTES and OWASP frameworks. Our comprehensive assessment encompasses full attack simulation cycles from reconnaissance to exploitation across all specified internet-facing infrastructure components, including black-box testing of all internet-facing services to identify exploitable vulnerabilities and weak configurations using objective-based penetration testing methods, website scraping, and defacement. Our assessment will execute complete attack chains across MOPH's external network infrastructure utilizing Cytomate's Breach+ platform for advanced attack simulation and emulation. The engagement will progress through reconnaissance, enumeration, vulnerability scanning, and exploitation. Testing includes evaluation of perimeter security controls, identification of exposed services, and validation of network segmentation controls. Cytomate's assessment will implement multiple Tactics, Techniques, and Procedures (TTPs) to simulate real-world adversary behavior and validate security controls effectiveness across the infrastructure. All testing activities will be mapped to the MITRE ATT&CK framework by Cytomate to ensure comprehensive coverage of attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, dashboard and portal access to management platform, integration with risk management platform, and training sessions for team members.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Internal Penetration Testing (Grey Box) - 3000 Internal IPs including Active Directory, Azure AD, Microsoft Exchange/O365, IIS/Apache, SQL, ERP, File Services, NAC/Endpoint Security Bypass, IAM/PAM</td>
+                    <td class="methodology">
+                        Cytomate's internal vulnerability assessment and penetration testing methodology evaluates MOPH's security posture leveraging PTES and OWASP frameworks. Our comprehensive assessment encompasses full attack simulation cycles from reconnaissance to exploitation across all specified internal infrastructure components, including internal testing to identify lateral movement paths, privilege escalation, domain takeover scenarios, and internal misconfigurations. Our assessment will execute complete attack chains across MOPH's internal network infrastructure, encompassing both wired and wireless environments utilizing Cytomate's Breach+ platform for advanced attack simulation and emulation. The engagement will progress through reconnaissance, exploitation, privilege escalation, credential abuse, Active Directory enumeration and Kerberos attacks, culminating in network pivoting and domain escalation. Testing includes deployment of rogue Wi-Fi access points, host-based defense evasion techniques, and comprehensive evaluation of network segmentation controls. Cytomate's assessment will implement multiple Tactics, Techniques, and Procedures (TTPs) to simulate real-world adversary behavior and validate security controls effectiveness across the infrastructure. All testing activities will be mapped to the MITRE ATT&CK framework by Cytomate to ensure comprehensive coverage of attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, dashboard and portal access to management platform, and integration with risk management platform within 3 months.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Wi-Fi Security Testing (Black Box) - 7 SSIDs (Head Office)</td>
+                    <td class="methodology">
+                        Cytomate's wireless security assessment methodology evaluates MOPH's wireless network security posture using industry best practices and OWASP Wireless Testing Guide. Our comprehensive assessment encompasses full attack simulation cycles targeting wireless infrastructure components, including evaluation of Wi-Fi security controls, encryption, rogue access points, and unauthorized access attempts across the head office premises. Our assessment will execute complete attack chains across MOPH's wireless network infrastructure utilizing Cytomate's Breach+ platform for advanced wireless attack simulation. The engagement will progress through wireless reconnaissance, access point identification, encryption analysis, and authentication testing. Testing includes deployment of rogue access points, evaluation of encryption protocols, and comprehensive assessment of wireless security controls. Cytomate's assessment will implement multiple wireless attack techniques to simulate real-world adversary behavior and validate security controls effectiveness across the wireless infrastructure. All testing activities will be mapped to the MITRE ATT&CK framework to ensure comprehensive coverage of wireless attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps and onboarding of all vulnerabilities to vulnerability tracking platform.
+                    </td>
+                </tr>
+                
+                <!-- STAGE 2 -->
+                <tr>
+                    <td rowspan="5" class="stage-header">STAGE 2 (ONSITE)</td>
+                    <td class="activity">External Web Application Security Assessment (Black Box) - 100 External Web Apps</td>
+                    <td class="methodology">
+                        Cytomate's web application security assessment methodology evaluates MOPH's external-facing web applications leveraging PTES and OWASP frameworks. Our comprehensive assessment encompasses full attack simulation cycles from reconnaissance to exploitation across all specified web application components, including manual and automated testing of external-facing applications for OWASP Top 10 and business logic flaws, website scraping, and defacement as explicitly required by MOPH. Our assessment will execute complete attack chains across MOPH's external-facing web applications utilizing Cytomate's Breach+ platform with its AI-Based WAF Evasion capabilities to test web application firewalls against mutated payloads. The engagement will progress through reconnaissance, mapping, vulnerability scanning, and exploitation. Testing includes evaluation of input validation controls, authentication mechanisms, and session management implementations. Cytomate's assessment will implement multiple web application attack techniques to simulate real-world adversary behavior and validate security controls effectiveness across the web application infrastructure. All testing activities will be mapped to the OWASP Top 10 and MITRE ATT&CK framework to ensure comprehensive coverage of web application attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">API Security Assessment (Black Box) - Publicly Exposed APIs</td>
+                    <td class="methodology">
+                        Cytomate's API security assessment methodology evaluates MOPH's public APIs leveraging OWASP API Security Top 10. Our comprehensive assessment encompasses full attack simulation cycles from reconnaissance to exploitation across all specified API components, including finding publicly exposed APIs and identifying potential misconfiguration and loopholes, in-depth testing for business logic and access control vulnerabilities, and OWASP Top 10 testing as explicitly required by MOPH. Our assessment will execute complete attack chains across MOPH's publicly exposed APIs utilizing Cytomate's Breach+ platform for advanced API attack simulation. The engagement will progress through API discovery, endpoint mapping, vulnerability scanning, and exploitation. Testing includes evaluation of authentication mechanisms, authorization controls, and data validation implementations. Cytomate's assessment will implement multiple API attack techniques to simulate real-world adversary behavior and validate security controls effectiveness across the API infrastructure. All testing activities will be mapped to the OWASP API Security Top 10 and MITRE ATT&CK framework to ensure comprehensive coverage of API attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">ERP Security Assessment (Grey Box) - 2 ERP Applications</td>
+                    <td class="methodology">
+                        Cytomate's ERP security assessment methodology evaluates MOPH's ERP systems leveraging industry best practices and OWASP Application Security Verification Standard. Our comprehensive assessment encompasses full evaluation cycles from configuration review to penetration testing across all specified ERP components, including an in-depth security assessment targeting ERP systems to evaluate authorization controls and ERP-specific security gaps, user access management, segregation of duties, and configuration weaknesses. Our assessment will execute complete evaluation cycles across MOPH's ERP systems utilizing Cytomate's Breach+ platform for advanced attack simulation and emulation. The engagement will progress through configuration review, access control evaluation, and penetration testing. Testing includes evaluation of user access management, segregation of duties, and configuration weaknesses. Cytomate's assessment will implement multiple ERP-specific attack techniques to simulate real-world adversary behavior and validate security controls effectiveness across the ERP infrastructure. All testing activities will be mapped to the MITRE ATT&CK framework to ensure comprehensive coverage of ERP attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Internal Web Application Security Assessment (Grey Box) - 10 Internal Applications</td>
+                    <td class="methodology">
+                        Cytomate's internal web application security assessment methodology evaluates MOPH's internal-facing web applications leveraging PTES and OWASP frameworks. Our comprehensive assessment encompasses full attack simulation cycles from reconnaissance to exploitation across all specified internal web application components, including focus on internal portals, custom web apps, and services critical to internal operations, website scraping, and defacement. Our assessment will execute complete attack chains across MOPH's internal-facing web applications utilizing Cytomate's Breach+ platform with its AI-Based WAF Evasion capabilities to test web application firewalls against mutated payloads. The engagement will progress through reconnaissance, mapping, vulnerability scanning, and exploitation. Testing includes evaluation of input validation controls, authentication mechanisms, and session management implementations. Cytomate's assessment will implement multiple web application attack techniques to simulate real-world adversary behavior and validate security controls effectiveness across the internal web application infrastructure. All testing activities will be mapped to the OWASP Top 10 and MITRE ATT&CK framework to ensure comprehensive coverage of web application attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Mobile Application Security Testing (Black Box) - 3 Mobile Apps (Android/iOS)</td>
+                    <td class="methodology">
+                        Cytomate's mobile application security assessment methodology evaluates MOPH's mobile applications leveraging OWASP Mobile Security Testing Guide. Our comprehensive assessment encompasses full attack simulation cycles from reconnaissance to exploitation across all specified mobile application components, including assessment of mobile apps covering API calls, insecure storage, reverse engineering, and runtime manipulation. Our assessment will execute complete attack chains across MOPH's mobile applications utilizing Cytomate's Breach+ platform for advanced mobile attack simulation. The engagement will progress through application analysis, static analysis, dynamic analysis, and penetration testing. Testing includes evaluation of data storage mechanisms, network communication security, and authentication implementations. Cytomate's assessment will implement multiple mobile application attack techniques to simulate real-world adversary behavior and validate security controls effectiveness across the mobile application infrastructure. All testing activities will be mapped to the OWASP Mobile Top 10 and MITRE ATT&CK framework to ensure comprehensive coverage of mobile application attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                
+                <!-- STAGE 3 -->
+                <tr>
+                    <td rowspan="3" class="stage-header">STAGE 3 (ONSITE)</td>
+                    <td class="activity">Source Code Review (White Box) - 10 Applications (max 1.5M LoC)</td>
+                    <td class="methodology">
+                        Cytomate's source code review methodology evaluates MOPH's application source code leveraging PTES and OWASP frameworks. Our comprehensive assessment encompasses full analysis cycles from automated scanning to manual review across all specified application components, including static code analysis and manual review to identify logic flaws, insecure coding practices, and vulnerabilities, with dev workshops for remediation steps discussion. Our assessment will execute complete analysis cycles across MOPH's application source code utilizing Cytomate's Advisory Services and SAST/DAST tools installed on MOPH provisioned laptop. The engagement will progress through automated scanning with SAST tools, manual code review, and secure coding validation. Testing includes evaluation of input validation, output encoding, authentication, and session management implementations. Cytomate's assessment will implement multiple code analysis techniques to identify security flaws and validate secure coding practices across the application codebase. All testing activities will be mapped to the OWASP Secure Coding Practices and CWE/SANS Top 25 to ensure comprehensive coverage of code-level vulnerabilities and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Advanced Social Engineering Assessment (Hybrid) - 2000 Staff incl. Vendors</td>
+                    <td class="methodology">
+                        Cytomate's social engineering assessment methodology evaluates MOPH's human security controls leveraging industry best practices and the Social Engineering Framework. Our comprehensive assessment encompasses full simulation cycles from planning to execution across all specified organizational components, including phishing, baiting, USB drops, and remote attack simulations, especially targeting IT/application admins and privileged users, with no whitelisting requested during assessment. Our assessment will execute complete simulation cycles across MOPH's staff and vendors utilizing Cytomate's Sarab Deception Technology to create decoys and mines that detect and analyze social engineering attempts. The engagement will progress through intelligence gathering, scenario development, execution, and analysis. Testing includes evaluation of security awareness, susceptibility to manipulation, and incident response procedures. Cytomate's assessment will implement multiple social engineering techniques to simulate real-world adversary behavior and validate human security controls effectiveness across the organization. All testing activities will be mapped to the MITRE ATT&CK framework to ensure comprehensive coverage of social engineering attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Product Security Assurance Service (Grey Box) - Up to 2 Security Products (EDR, Proxy, etc.)</td>
+                    <td class="methodology">
+                        Cytomate's product security assurance methodology evaluates MOPH's security products leveraging the MITRE ATT&CK framework. Our comprehensive assessment encompasses full testing cycles from deployment to validation across all specified security product components, including independently testing security products against MITRE ATT&CK tactics to benchmark prevention/detection capabilities without mixing with pentesting scope. Our assessment will execute complete testing cycles across MOPH's security products utilizing Cytomate's Breach+ platform for advanced attack simulation and emulation. The engagement will progress through product deployment, attack simulation, and effectiveness validation. Testing includes evaluation of detection capabilities, prevention mechanisms, and alerting functionality. Cytomate's assessment will implement multiple attack techniques aligned with MITRE ATT&CK tactics to simulate real-world adversary behavior and validate security product effectiveness across the infrastructure. All testing activities will be mapped to the MITRE ATT&CK framework to ensure comprehensive coverage of attack vectors and provide structured threat intelligence for defensive improvements. Testing will be conducted independently without mixing with pentesting scope. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include onboarding and access to platform, deployment of sensors across all endpoints, training and knowledge transfer sessions for team members, and integration support with RM platform.
+                    </td>
+                </tr>
+                
+                <!-- STAGE 4 -->
+                <tr>
+                    <td rowspan="6" class="stage-header">STAGE 4 (ONSITE)</td>
+                    <td class="activity">Configuration Review & System Hardening (White Box) - Sample of up to 100 IPs from Servers, Databases, Security/Network Devices, SIEM/SOAR, AD, Azure Cloud</td>
+                    <td class="methodology">
+                        Cytomate's configuration review and system hardening methodology evaluates MOPH's system configurations leveraging industry best practices including CIS Benchmarks and NIST guidelines. Our comprehensive assessment encompasses full review cycles from configuration analysis to hardening recommendation across all specified system components, including review of hardening benchmarks, misconfigurations, and unnecessary services across servers and security infrastructure. Our assessment will execute complete review cycles across MOPH's system configurations utilizing Cytomate's Advisory Services for specialized configuration assessment. The engagement will progress through configuration analysis, benchmark comparison, and vulnerability identification. Testing includes evaluation of security settings, service configurations, and access control implementations. Cytomate's assessment will implement multiple configuration analysis techniques to identify security weaknesses and validate hardening best practices across the system infrastructure. All testing activities will be mapped to CIS Benchmarks and NIST guidelines to ensure comprehensive coverage of configuration vulnerabilities and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">VoIP Security Assessment (Grey Box) - 1 VoIP Network</td>
+                    <td class="methodology">
+                        Cytomate's VoIP security assessment methodology evaluates MOPH's VoIP infrastructure leveraging industry best practices and VoIP security frameworks. Our comprehensive assessment encompasses full testing cycles from reconnaissance to exploitation across all specified VoIP components, including assessment of VoIP protocols, call spoofing, eavesdropping, and unauthorized device registration. Our assessment will execute complete testing cycles across MOPH's VoIP network utilizing Cytomate's Breach+ platform for advanced VoIP attack simulation. The engagement will progress through VoIP reconnaissance, protocol analysis, and vulnerability testing. Testing includes evaluation of SIP/RTP implementations, authentication mechanisms, and encryption configurations. Cytomate's assessment will implement multiple VoIP attack techniques to simulate real-world adversary behavior and validate security controls effectiveness across the VoIP infrastructure. All testing activities will be mapped to the MITRE ATT&CK framework to ensure comprehensive coverage of VoIP attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed vulnerability reports with remediation steps, onboarding of all vulnerabilities to RM platform, and Excel trackers for all vulnerabilities with parsing support on RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Risk Management Platform (Hybrid) - Hosted In-House, 3000 Assets</td>
+                    <td class="methodology">
+                        Cytomate's risk management platform methodology evaluates MOPH's risk management requirements leveraging industry best practices and the Qatar Common Criteria Scheme. Our comprehensive assessment encompasses full deployment cycles from platform installation to integration across all specified organizational components, including deploying a centralized Risk management platform for real-time tracking, management, and prioritization of identified vulnerabilities, hosted In-House and certified against Qatar Common Criteria Scheme. Our assessment will execute complete deployment cycles for MOPH's risk management platform utilizing Cytomate's Racid External Attack Surface Management platform for digital asset monitoring, threat mapping, risk rating, brand monitoring, and dark web monitoring. The engagement will progress through platform installation, configuration, and integration. Testing includes evaluation of vulnerability tracking capabilities, risk prioritization functionality, and reporting mechanisms. Cytomate's assessment will implement multiple deployment techniques to ensure comprehensive coverage of risk management requirements across the organization. All platform activities will be certified against the Qatar Common Criteria Scheme to ensure compliance with national requirements and provide structured threat intelligence for defensive improvements. Platform will be hosted in-house. All deployment will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include identification of all external exposed APIs, identification of loopholes and misconfigurations that could lead to data breaches, and platform deployment and integration.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Detection and Response (Grey Box) - Red Team Exercise for SIEM</td>
+                    <td class="methodology">
+                        Cytomate's detection and response assessment methodology evaluates MOPH's security monitoring capabilities leveraging the MITRE ATT&CK framework. Our comprehensive assessment encompasses full simulation cycles from planning to execution across all specified security monitoring components, including Red Team exercise for testing security monitoring solutions. Our assessment will execute complete simulation cycles across MOPH's security monitoring solutions utilizing Cytomate's Breach+ and Sarab platforms for Purple Team exercise to assess SOC Detection and Response Capability. The engagement will progress through attack scenario development, execution, and detection validation. Testing includes evaluation of alert generation, incident response procedures, and analyst effectiveness. Cytomate's assessment will implement multiple attack techniques aligned with MITRE ATT&CK tactics to simulate real-world adversary behavior and validate detection and response capabilities across the security monitoring infrastructure. All testing activities will be mapped to the MITRE ATT&CK framework to ensure comprehensive coverage of attack vectors and provide structured threat intelligence for defensive improvements. All testing will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include detailed reports of detection capabilities with improvement recommendations and integration support with RM platform.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="activity">Clean Up - All Systems</td>
+                    <td class="methodology">
+                        Cytomate's cleanup methodology ensures systematic removal of all testing artifacts from MOPH's environment leveraging industry best practices and documentation procedures. Our comprehensive cleanup process encompasses full verification cycles from artifact identification to evidence collection across all tested system components, including clean up after all VAPT activities and stated in the completion report. Our assessment will execute complete verification cycles across all systems tested during the engagement utilizing Cytomate's Advisory Services for systematic cleanup procedures. The process will progress through artifact identification, removal, and verification. Testing includes evaluation of system configurations, log files, and temporary files. Cytomate's assessment will implement multiple verification techniques to ensure comprehensive removal of all testing artifacts across the tested infrastructure. All cleanup activities will be documented with evidence to ensure complete restoration of systems to their pre-test state and provide structured verification for defensive improvements. All cleanup will be performed onsite at MOPH premises using locally available resources with no remote delivery. Deliverables include cleanup reports with evidence of all removed artifacts and documentation of all cleaned systems.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
